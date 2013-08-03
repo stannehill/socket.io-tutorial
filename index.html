@@ -43,7 +43,6 @@
             });
 
             socket.on('player', function(data){
-                console.log('player emit received: ' + data.player);
                 if(data.player !== 0){
                     $('#target').css({"top": '-220px',"opacity": "0.1"});
                 }
@@ -61,9 +60,9 @@
     </script>
 </head>
 <body>
-<h1>Litmusbox</h1>
+    <h1>Litmusbox</h1>
 
-<div id="target"></div>
+    <div id="target"></div>
 </body>
 </html>
 
